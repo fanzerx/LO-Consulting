@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco</title>
+  <link rel="stylesheet" href="trabalhe-conosco.css">
+</head>
+<body>
+
+  <header>
+    <h1>Trabalhe Conosco</h1>
+  </header>
+
+  <section class="pagina-cadastro">
+    <div class="form-container">
+      <h2>Cadastre seu currículo</h2>
+      <p>
+        Preencha seus dados abaixo e envie seu currículo em PDF para participar
+        de futuras oportunidades em nossa empresa.
+      </p>
+
+      <form id="formCurriculo" action="enviar-curriculo.php" method="POST" enctype="multipart/form-data">
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+        </div>
+
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="campo">
+            <label for="cargo">Cargo de interesse</label>
+            <select id="cargo" name="cargo" required>
+              <option value="">Selecione</option>
+              <option value="Administrativo">Administrativo</option>
+              <option value="Comercial">Comercial</option>
+              <option value="Operacional">Operacional</option>
+              <option value="Engenharia">Engenharia</option>
+              <option value="Técnico">Técnico</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Fale um pouco sobre sua experiência, disponibilidade ou área de atuação"></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="curriculo">Envio do currículo (PDF)</label>
+          <div class="upload-box">
+            <p>Selecione seu currículo em PDF</p>
+            <label for="curriculo" class="upload-label">Escolher arquivo</label>
+            <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+            <div class="file-name" id="fileName">Nenhum arquivo selecionado</div>
+            <div class="info-arquivo">Formato aceito: PDF | Tamanho máximo sugerido: 5MB</div>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" id="termos" required>
+          <span>Autorizo o envio e armazenamento dos meus dados e currículo para fins de recrutamento e seleção.</span>
+        </label>
+
+        <button type="submit" class="btn-enviar">Enviar currículo</button>
+
+        <div id="statusMsg" class="mensagem-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/trabalhe-conosco.js"></script>
+</body>
+</html>
