@@ -735,8 +735,57 @@ border-radius:2px;
   z-index: 2;
 }
 
+.mvv-content{
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 22px;
+  text-align: center;
 }
 
+.mvv-content h3{
+  width: 100%;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+.mvv-content p{
+  margin: 0;
+  color: #f4f7ff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.40);
+  text-align: center;
+}
+
+.mvv-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mvv-list li{
+  text-align: center;
+}
+
+.mvv-card:hover{
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 24px 45px rgba(0,0,0,0.26);
+}
 /*modal*/
 .mvv-card{
   cursor:pointer;
@@ -1802,6 +1851,7 @@ footer {
   .mvv-list li{
     font-size:14px;
     line-height:1.7;
+    width: 100%;
   }
 }
 
