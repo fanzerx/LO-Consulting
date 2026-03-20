@@ -742,7 +742,7 @@ border-radius:2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 28px 22px;
   text-align: center;
 }
@@ -1794,5 +1794,158 @@ footer {
 
   .btn {
     max-width: 260px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVO POLÍTICA + MVV
+========================= */
+
+/* TABLET */
+@media (max-width: 900px){
+
+  /* caixa da política */
+  .pmvv-topo{
+    padding:30px 25px;
+  }
+
+  .pmvv-topo h2{
+    font-size:30px;
+  }
+
+  .pmvv-topo h3{
+    font-size:15px;
+  }
+
+  .pmvv-topo p{
+    font-size:14px;
+    text-align:left;
+  }
+
+  /* lista */
+  .pmvv-politica-lista li{
+    font-size:14px;
+  }
+
+  /* cards MVV */
+  .mvv-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .mvv-card{
+    min-height:300px;
+  }
+
+  .mvv-content{
+    padding:22px 18px;
+  }
+
+  .mvv-content h3{
+    font-size:24px;
+  }
+
+  .mvv-content p,
+  .mvv-list li{
+    font-size:14px;
+    line-height:1.7;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px){
+
+  .politica-mvv{
+    padding:60px 12px;
+  }
+
+  /* topo política */
+  .pmvv-topo{
+    padding:25px 18px;
+    border-radius:12px;
+  }
+
+  .pmvv-topo h2{
+    font-size:26px;
+  }
+
+  .pmvv-topo h3{
+    font-size:14px;
+    line-height:1.4;
+  }
+
+  .pmvv-topo p{
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  /* lista */
+  .pmvv-politica-lista li{
+    font-size:13px;
+    line-height:1.6;
+    padding-left:20px;
+  }
+
+  /* MVV header */
+  .mvv-header h2{
+    font-size:24px;
+  }
+
+  .mvv-header p{
+    font-size:14px;
+  }
+
+  /* cards */
+  .mvv-card{
+    min-height:260px;
+    border-radius:14px;
+  }
+
+  .mvv-content{
+    padding:18px 14px;
+  }
+
+  .mvv-content h3{
+    font-size:22px;
+  }
+
+  .mvv-content p{
+    font-size:13px;
+    line-height:1.6;
+    text-align:left;
+  }
+
+  .mvv-list li{
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  /* modal */
+  .mvv-modal-box{
+    width:100%;
+    padding:18px;
+  }
+
+  .mvv-modal-img-wrap{
+    height:260px;
+  }
+
+  .mvv-modal-img-main{
+    max-height:220px;
+  }
+
+  .mvv-modal-box h3{
+    font-size:22px;
+  }
+
+  #mvvModalText{
+    font-size:14px;
+  }
+
+  .mvv-modal-close{
+    font-size:28px;
+    top:8px;
+    right:12px;
   }
 }
